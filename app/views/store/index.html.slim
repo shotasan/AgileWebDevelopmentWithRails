@@ -2,6 +2,8 @@
   p#notice
     = notice
 
+h2 訪問回数: #{@counter}
+
 h1 Pragmaticカタログ
 
 - @products.each do |product|
@@ -12,3 +14,4 @@ h1 Pragmaticカタログ
     .price_line
       span.price
         = number_to_currency(product.price)
+      = button_to 'カートに入れる', line_items_path(product_id: product)
