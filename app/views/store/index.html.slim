@@ -12,3 +12,4 @@ h1 Pragmaticカタログ
     .price_line
       span.price
         = number_to_currency(product.price)
+      = button_to 'カートに入れる', line_items_path(product_id: product)
