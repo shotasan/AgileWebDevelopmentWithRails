@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Rails depot: development">
+  <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.15">
+    <root id="1">
+      <ServerVersion>11.2</ServerVersion>
+    </root>
+    <database id="2" parent="1" name="FacebookClone_development">
+      <ObjectId>16682</ObjectId>
+      <StateNumber>852</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="3" parent="1" name="FacebookClone_test">
+      <ObjectId>16683</ObjectId>
+      <StateNumber>853</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="4" parent="1" name="GraphQL_app_development">
+      <ObjectId>29012</ObjectId>
+      <StateNumber>34777</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="5" parent="1" name="GraphQL_app_test">
+      <ObjectId>29013</ObjectId>
+      <StateNumber>34778</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="6" parent="1" name="GraphiQL_banned_development">
+      <ObjectId>29058</ObjectId>
+      <StateNumber>34789</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="7" parent="1" name="GraphiQL_banned_test">
+      <ObjectId>29059</ObjectId>
+      <StateNumber>34790</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="8" parent="1" name="InstaClone_development">
+      <ObjectId>16729</ObjectId>
+      <StateNumber>1004</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="9" parent="1" name="InstaClone_test">
+      <ObjectId>16820</ObjectId>
+      <StateNumber>1263</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="10" parent="1" name="Tclone_development">
+      <ObjectId>16424</ObjectId>
+      <StateNumber>579</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="11" parent="1" name="Tclone_test">
+      <ObjectId>16425</ObjectId>
+      <StateNumber>580</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="12" parent="1" name="associations_app_development">
+      <ObjectId>16520</ObjectId>
+      <StateNumber>693</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="13" parent="1" name="associations_app_test">
+      <ObjectId>16521</ObjectId>
+      <StateNumber>694</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="14" parent="1" name="bootstrap_development">
+      <ObjectId>16453</ObjectId>
+      <StateNumber>668</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="15" parent="1" name="bootstrap_test">
+      <ObjectId>16454</ObjectId>
+      <StateNumber>669</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="16" parent="1" name="depot_development">
+      <ObjectId>73856</ObjectId>
+      <StateNumber>53569</StateNumber>
+      <Owner>shota</Owner>
+      <IntrospectionStateNumber>53692</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+      <Relations>sequence|table|73885|73887|1
+sequence|table|73924|73926|1
+sequence|table|73932|73934|1
+</Relations>
+    </database>
+    <database id="17" parent="1" name="depot_test">
+      <ObjectId>73942</ObjectId>
+      <StateNumber>53627</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="18" parent="1" name="gem_test_app_development">
+      <ObjectId>30048</ObjectId>
+      <StateNumber>36379</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="19" parent="1" name="gem_test_app_test">
+      <ObjectId>30049</ObjectId>
+      <StateNumber>36380</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="20" parent="1" name="image_uploader_test_app_development">
+      <ObjectId>16653</ObjectId>
+      <StateNumber>844</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="21" parent="1" name="image_uploader_test_app_test">
+      <ObjectId>16654</ObjectId>
+      <StateNumber>845</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="22" parent="1" name="kanzashi_development">
+      <ObjectId>31982</ObjectId>
+      <StateNumber>42138</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="23" parent="1" name="kanzashi_test">
+      <ObjectId>33296</ObjectId>
+      <StateNumber>43652</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="24" parent="1" name="keijiban_development">
+      <ObjectId>29812</ObjectId>
+      <StateNumber>35876</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="25" parent="1" name="keijiban_test">
+      <ObjectId>29813</ObjectId>
+      <StateNumber>35877</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="26" parent="1" name="mailer_development">
+      <ObjectId>16622</ObjectId>
+      <StateNumber>735</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="27" parent="1" name="mailer_test">
+      <ObjectId>16623</ObjectId>
+      <StateNumber>736</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="28" parent="1" name="porimofic_test_development">
+      <ObjectId>30399</ObjectId>
+      <StateNumber>38148</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="29" parent="1" name="porimofic_test_test">
+      <ObjectId>30400</ObjectId>
+      <StateNumber>38149</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="30" parent="1" name="postgres">
+      <ObjectId>13364</ObjectId>
+      <Comment>default administrative connection database</Comment>
+      <StateNumber>566</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="31" parent="1" name="rails-helloworld_development">
+      <ObjectId>28901</ObjectId>
+      <StateNumber>34752</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="32" parent="1" name="rails-helloworld_test">
+      <ObjectId>28902</ObjectId>
+      <StateNumber>34753</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="33" parent="1" name="session_login_development">
+      <ObjectId>16482</ObjectId>
+      <StateNumber>674</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="34" parent="1" name="session_login_test">
+      <ObjectId>16483</ObjectId>
+      <StateNumber>675</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="35" parent="1" name="task_management_app_development">
+      <ObjectId>16885</ObjectId>
+      <StateNumber>1288</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="36" parent="1" name="task_management_app_test">
+      <ObjectId>29655</ObjectId>
+      <StateNumber>35685</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="37" parent="1" name="taskleaf_development">
+      <ObjectId>29743</ObjectId>
+      <StateNumber>35852</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="38" parent="1" name="taskleaf_production">
+      <ObjectId>29996</ObjectId>
+      <StateNumber>36365</StateNumber>
+      <Owner>taskleaf</Owner>
+    </database>
+    <database id="39" parent="1" name="taskleaf_test">
+      <ObjectId>29953</ObjectId>
+      <StateNumber>35905</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="40" parent="1" name="webTech_test_development">
+      <ObjectId>28972</ObjectId>
+      <StateNumber>34769</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="41" parent="1" name="webTech_test_test">
+      <ObjectId>28973</ObjectId>
+      <StateNumber>34770</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="42" parent="1" name="web_technology_development">
+      <ObjectId>28903</ObjectId>
+      <StateNumber>34754</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="43" parent="1" name="web_technology_practice_development">
+      <ObjectId>28932</ObjectId>
+      <StateNumber>34761</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="44" parent="1" name="web_technology_practice_test">
+      <ObjectId>28933</ObjectId>
+      <StateNumber>34762</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <database id="45" parent="1" name="web_technology_test">
+      <ObjectId>28904</ObjectId>
+      <StateNumber>34755</StateNumber>
+      <Owner>shota</Owner>
+    </database>
+    <role id="46" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="47" parent="1" name="pg_monitor">
+      <ObjectId>3373</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="48" parent="1" name="pg_read_all_settings">
+      <ObjectId>3374</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="49" parent="1" name="pg_read_all_stats">
+      <ObjectId>3375</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="50" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="51" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="52" parent="1" name="pg_stat_scan_tables">
+      <ObjectId>3377</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="53" parent="1" name="pg_write_server_files">
+      <ObjectId>4570</ObjectId>
+      <Inherit>1</Inherit>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <role id="54" parent="1" name="shota">
+      <ObjectId>10</ObjectId>
+      <SuperRole>1</SuperRole>
+      <Inherit>1</Inherit>
+      <CreateRole>1</CreateRole>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+      <Replication>1</Replication>
+      <BypassRls>1</BypassRls>
+    </role>
+    <role id="55" parent="1" name="taskleaf">
+      <ObjectId>29995</ObjectId>
+      <Inherit>1</Inherit>
+      <CreateDb>1</CreateDb>
+      <CanLogin>1</CanLogin>
+      <ConnectionLimit>-1</ConnectionLimit>
+    </role>
+    <schema id="56" parent="16" name="information_schema">
+      <ObjectId>13068</ObjectId>
+      <StateNumber>365</StateNumber>
+      <Owner>shota</Owner>
+    </schema>
+    <schema id="57" parent="16" name="pg_catalog">
+      <ObjectId>11</ObjectId>
+      <Comment>system catalog schema</Comment>
+      <StateNumber>358</StateNumber>
+      <Owner>shota</Owner>
+    </schema>
+    <schema id="58" parent="16" name="pg_temp_1">
+      <ObjectId>11804</ObjectId>
+      <StateNumber>120</StateNumber>
+      <Owner>shota</Owner>
+    </schema>
+    <schema id="59" parent="16" name="pg_toast">
+      <ObjectId>99</ObjectId>
+      <Comment>reserved schema for TOAST tables</Comment>
+      <StateNumber>1</StateNumber>
+      <Owner>shota</Owner>
+    </schema>
+    <schema id="60" parent="16" name="pg_toast_temp_1">
+      <ObjectId>11805</ObjectId>
+      <StateNumber>120</StateNumber>
+      <Owner>shota</Owner>
+    </schema>
+    <schema id="61" parent="16" name="public">
+      <ObjectId>2200</ObjectId>
+      <Comment>standard public schema</Comment>
+      <StateNumber>359</StateNumber>
+      <Owner>shota</Owner>
+      <IntrospectionStateNumber>53693</IntrospectionStateNumber>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <access-method id="62" parent="16" name="btree">
+      <ObjectId>403</ObjectId>
+      <Comment>b-tree index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.bthandler</Handler>
+      <HandlerId>330</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="63" parent="16" name="hash">
+      <ObjectId>405</ObjectId>
+      <Comment>hash index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.hashhandler</Handler>
+      <HandlerId>331</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="64" parent="16" name="gist">
+      <ObjectId>783</ObjectId>
+      <Comment>GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.gisthandler</Handler>
+      <HandlerId>332</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="65" parent="16" name="gin">
+      <ObjectId>2742</ObjectId>
+      <Comment>GIN index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.ginhandler</Handler>
+      <HandlerId>333</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="66" parent="16" name="spgist">
+      <ObjectId>4000</ObjectId>
+      <Comment>SP-GiST index access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.spghandler</Handler>
+      <HandlerId>334</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <access-method id="67" parent="16" name="brin">
+      <ObjectId>3580</ObjectId>
+      <Comment>block range index (BRIN) access method</Comment>
+      <StateNumber>1</StateNumber>
+      <Handler>pg_catalog.brinhandler</Handler>
+      <HandlerId>335</HandlerId>
+      <Type>index</Type>
+    </access-method>
+    <extension id="68" parent="16" name="plpgsql">
+      <ObjectId>13350</ObjectId>
+      <Comment>PL/pgSQL procedural language</Comment>
+      <StateNumber>518</StateNumber>
+      <Version>1.0</Version>
+      <SchemaName>pg_catalog</SchemaName>
+      <SchemaId>11</SchemaId>
+    </extension>
+    <sequence id="69" parent="61" name="carts_id_seq">
+      <ObjectId>73924</ObjectId>
+      <StateNumber>53599</StateNumber>
+      <Owner>shota</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="70" parent="61" name="line_items_id_seq">
+      <ObjectId>73932</ObjectId>
+      <StateNumber>53600</StateNumber>
+      <Owner>shota</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="71" parent="61" name="products_id_seq">
+      <ObjectId>73885</ObjectId>
+      <StateNumber>53576</StateNumber>
+      <Owner>shota</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <table id="72" parent="61" name="ar_internal_metadata">
+      <ObjectId>73866</ObjectId>
+      <Owner>shota</Owner>
+      <StateNumber>53572</StateNumber>
+    </table>
+    <table id="73" parent="61" name="carts">
+      <ObjectId>73926</ObjectId>
+      <Owner>shota</Owner>
+      <StateNumber>53599</StateNumber>
+    </table>
+    <table id="74" parent="61" name="line_items">
+      <ObjectId>73934</ObjectId>
+      <Owner>shota</Owner>
+      <StateNumber>53609</StateNumber>
+    </table>
+    <table id="75" parent="61" name="products">
+      <ObjectId>73887</ObjectId>
+      <Owner>shota</Owner>
+      <StateNumber>53576</StateNumber>
+    </table>
+    <table id="76" parent="61" name="schema_migrations">
+      <ObjectId>73858</ObjectId>
+      <Owner>shota</Owner>
+      <StateNumber>53571</StateNumber>
+    </table>
+    <column id="77" parent="72" name="key">
+      <Position>1</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>53572</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="78" parent="72" name="value">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>53572</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="79" parent="72" name="created_at">
+      <Position>3</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>53572</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="80" parent="72" name="updated_at">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>53572</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="81" parent="72" name="ar_internal_metadata_pkey">
+      <ObjectId>73872</ObjectId>
+      <StateNumber>53572</StateNumber>
+      <ColNames>key</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="82" parent="72" name="ar_internal_metadata_pkey">
+      <ObjectId>73873</ObjectId>
+      <StateNumber>53572</StateNumber>
+      <ColNames>key</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>ar_internal_metadata_pkey</UnderlyingIndexName>
+    </key>
+    <column id="83" parent="73" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>53599</StateNumber>
+      <DefaultExpression>nextval(&apos;carts_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="84" parent="73" name="created_at">
+      <Position>2</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>53599</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="85" parent="73" name="updated_at">
+      <Position>3</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>53599</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="86" parent="73" name="carts_pkey">
+      <ObjectId>73930</ObjectId>
+      <StateNumber>53599</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="87" parent="73" name="carts_pkey">
+      <ObjectId>73931</ObjectId>
+      <StateNumber>53599</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>carts_pkey</UnderlyingIndexName>
+    </key>
+    <column id="88" parent="74" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>53600</StateNumber>
+      <DefaultExpression>nextval(&apos;line_items_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="89" parent="74" name="product_id">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>53600</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="90" parent="74" name="cart_id">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>53600</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <column id="91" parent="74" name="created_at">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>53600</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="92" parent="74" name="updated_at">
+      <Position>5</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>53600</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="93" parent="74" name="quantity">
+      <Position>7</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>53609</StateNumber>
+      <DefaultExpression>1</DefaultExpression>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="94" parent="74" name="line_items_pkey">
+      <ObjectId>73938</ObjectId>
+      <StateNumber>53600</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="95" parent="74" name="line_items_pkey">
+      <ObjectId>73939</ObjectId>
+      <StateNumber>53600</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>line_items_pkey</UnderlyingIndexName>
+    </key>
+    <column id="96" parent="75" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>53576</StateNumber>
+      <DefaultExpression>nextval(&apos;products_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="97" parent="75" name="title">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>53576</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="98" parent="75" name="description">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>53576</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="99" parent="75" name="image_url">
+      <Position>4</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>53576</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="100" parent="75" name="price">
+      <Position>5</Position>
+      <DataType>numeric(8,2 digit)|0s</DataType>
+      <StateNumber>53576</StateNumber>
+      <TypeId>1700</TypeId>
+    </column>
+    <column id="101" parent="75" name="created_at">
+      <Position>6</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>53576</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="102" parent="75" name="updated_at">
+      <Position>7</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>53576</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <index id="103" parent="75" name="products_pkey">
+      <ObjectId>73894</ObjectId>
+      <StateNumber>53576</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="104" parent="75" name="products_pkey">
+      <ObjectId>73895</ObjectId>
+      <StateNumber>53576</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>products_pkey</UnderlyingIndexName>
+    </key>
+    <column id="105" parent="76" name="version">
+      <Position>1</Position>
+      <DataType>varchar|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>53571</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="106" parent="76" name="schema_migrations_pkey">
+      <ObjectId>73864</ObjectId>
+      <StateNumber>53571</StateNumber>
+      <ColNames>version</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="107" parent="76" name="schema_migrations_pkey">
+      <ObjectId>73865</ObjectId>
+      <StateNumber>53571</StateNumber>
+      <ColNames>version</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>schema_migrations_pkey</UnderlyingIndexName>
+    </key>
+  </database-model>
+</dataSource>
