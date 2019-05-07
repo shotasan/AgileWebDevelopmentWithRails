@@ -1,4 +1,4 @@
-- notice
+- if notice
   p#notice = notice
 
 h2 Pragmaticカート
@@ -9,6 +9,8 @@ ul
       = item.quantity
       == ("&times;")
       = item.product.title
+
+= button_to 'カートを空にする', @cart, method: :delete, confirm: '本当によいですか？'
 
 => link_to 'Edit', edit_cart_path(@cart)
 '|
