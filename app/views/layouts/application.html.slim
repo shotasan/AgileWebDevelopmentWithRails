@@ -1,11 +1,26 @@
 doctype html
 html
-  head
-    title
-      | Depot
-    = csrf_meta_tags
-    = csp_meta_tag
-    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-  body class="#{controller.controller_name}"
-  = yield
+head
+  title
+    | Pragprog Books オンラインストア
+  = csrf_meta_tags
+  = csp_meta_tag
+  = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+  = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+body class="#{controller.controller_name}"
+  #banner
+    = image_tag("logo.png")
+    = @page_title || "Pragmatic Bookshelf"
+  #columns
+    #side
+      ul
+        li
+          a href="#" ホーム
+        li
+          a href="#" よくある質問
+        li
+          a href="#" ニュース
+        li
+          a href="#" お問い合わせ
+    #main
+      = yield
