@@ -1,5 +1,5 @@
 class CartsController < ApplicationController
-  before_action :set_cart, only: [:show, :edit, :update, :destroy]
+  before_action :set_cart, only: [:edit, :update, :destroy]
 
   # GET /carts
   # GET /carts.json
@@ -10,6 +10,17 @@ class CartsController < ApplicationController
   # GET /carts/1
   # GET /carts/1.json
   def show
+    begin
+      set_cart
+    rescue ActiveRecord::RecordNotFound
+      logger.error "無効なカート#{ params[:id] }にアクセスしようとしました"
+      redirect_to store_url, notice: '無効なカートです'
+    else
+      respond_to do |format|
+        format.html # show.html.slim
+        format.json { render json: @cart }
+      end
+    end
   end
 
   # GET /carts/new
