@@ -24,14 +24,17 @@ class LineItemsController < ApplicationController
   # POST /line_items
   # POST /line_items.json
   def create
-    # current_cartにはCartのインスタンスが入っている
+    # current_cartにはCartのインスタンス(番号)が入っている
     @cart = current_cart
+    # params[:product_id]はカートに入れるボタンを押した時に送られる
     product = Product.find(params[:product_id])
     @line_item = @cart.add_product(product.id)
 
     respond_to do |format|
       if @line_item.save
         session[:counter] = 0
+        # @line_item.cartはアソシエーションメソッドを使用してcartのインスタンスを取得している
+        # redirect_to @cart と意味は同じ
         format.html { redirect_to @line_item.cart, notice: 'Line item was successfully created.' }
         format.json { render :show, status: :created, location: @line_item }
       else

@@ -1,6 +1,7 @@
 class Cart < ApplicationRecord
   has_many :line_items, dependent: :destroy
 
+  # カートに既に商品があれば数量を増やし、無ければ新たに関連付けを行う
   def add_product(product_id)
     current_item = line_items.find_by_product_id(product_id)
     if current_item
