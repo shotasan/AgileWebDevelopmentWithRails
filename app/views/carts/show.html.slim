@@ -1,10 +1,14 @@
-p#notice = notice
+- notice
+  p#notice = notice
 
 h2 Pragmaticカート
 
 ul
   - @cart.line_items.each do |item|
-    li = item.product.title
+    li
+      = item.quantity
+      == ("&times;")
+      = item.product.title
 
 => link_to 'Edit', edit_cart_path(@cart)
 '|
