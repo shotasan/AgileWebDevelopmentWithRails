@@ -36,7 +36,7 @@ class LineItemsController < ApplicationController
         # @line_item.cartはアソシエーションメソッドを使用してcartのインスタンスを取得している
         # redirect_to @cart と意味は同じ
         format.html { redirect_to store_url }
-        format.js
+        format.js   { @current_item = @line_item}
         format.json { render json: @line_item, status: :created, location: @line_item }
       else
         format.html { render :new }
