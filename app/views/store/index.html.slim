@@ -15,4 +15,4 @@ h1 Pragmaticカタログ
       span.price
         = number_to_currency(product.price)
         / パラメータでproduct_idを送る
-      = button_to 'カートに入れる', line_items_path(product_id: product)
+      = button_to 'カートに入れる', line_items_path(product_id: product), remote: true

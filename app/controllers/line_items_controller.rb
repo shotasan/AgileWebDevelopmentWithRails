@@ -35,8 +35,9 @@ class LineItemsController < ApplicationController
         session[:counter] = 0
         # @line_item.cartはアソシエーションメソッドを使用してcartのインスタンスを取得している
         # redirect_to @cart と意味は同じ
-        format.html { redirect_to @line_item.cart, notice: 'Line item was successfully created.' }
-        format.json { render :show, status: :created, location: @line_item }
+        format.html { redirect_to store_url }
+        format.js   { @current_item = @line_item}
+        format.json { render json: @line_item, status: :created, location: @line_item }
       else
         format.html { render :new }
         format.json { render json: @line_item.errors, status: :unprocessable_entity }
