@@ -1,4 +1,12 @@
                    Prefix Verb   URI Pattern                                                                              Controller#Action
+                   orders GET    /orders(.:format)                                                                        orders#index
+                          POST   /orders(.:format)                                                                        orders#create
+                new_order GET    /orders/new(.:format)                                                                    orders#new
+               edit_order GET    /orders/:id/edit(.:format)                                                               orders#edit
+                    order GET    /orders/:id(.:format)                                                                    orders#show
+                          PATCH  /orders/:id(.:format)                                                                    orders#update
+                          PUT    /orders/:id(.:format)                                                                    orders#update
+                          DELETE /orders/:id(.:format)                                                                    orders#destroy
                line_items GET    /line_items(.:format)                                                                    line_items#index
                           POST   /line_items(.:format)                                                                    line_items#create
             new_line_item GET    /line_items/new(.:format)                                                                line_items#new
@@ -17,6 +25,7 @@
                           DELETE /carts/:id(.:format)                                                                     carts#destroy
                     store GET    /                                                                                        store#index
               store_index GET    /store/index(.:format)                                                                   store#index
+       who_bought_product GET    /products/:id/who_bought(.:format)                                                       products#who_bought
                  products GET    /products(.:format)                                                                      products#index
                           POST   /products(.:format)                                                                      products#create
               new_product GET    /products/new(.:format)                                                                  products#new
