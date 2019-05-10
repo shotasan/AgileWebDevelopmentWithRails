@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   root 'store#index', as: 'store'
   resources :orders
   resources :line_items
