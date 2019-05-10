@@ -78,7 +78,7 @@
       <ObjectId>73856</ObjectId>
       <StateNumber>53569</StateNumber>
       <Owner>shota</Owner>
-      <IntrospectionStateNumber>54128</IntrospectionStateNumber>
+      <IntrospectionStateNumber>54167</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
       <Relations>sequence|table|73885|73887|1
@@ -323,7 +323,7 @@ sequence|table|73987|73989|1
       <Comment>standard public schema</Comment>
       <StateNumber>359</StateNumber>
       <Owner>shota</Owner>
-      <IntrospectionStateNumber>54129</IntrospectionStateNumber>
+      <IntrospectionStateNumber>54168</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
