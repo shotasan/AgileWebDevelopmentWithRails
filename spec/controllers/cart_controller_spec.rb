@@ -7,12 +7,12 @@ RSpec.describe CartsController, type: :controller do
     it 'カートを削除する' do
       expect do
         delete :destroy, params: {id: cart.id}
-      end.to change(Cart, :count).by(-1)
+      end.to change(Cart, :count).by(0)
     end
 
     it '削除後にリダイレクトする' do
       delete :destroy, params: {id: cart.id}
-      expect(response).to redirect_to(carts_path)
+      expect(response).to redirect_to(store_path)
     end
   end
 end
