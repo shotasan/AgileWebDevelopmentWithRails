@@ -71,3 +71,4 @@ gem 'slim-rails'
 gem 'html2slim'
 gem "jquery-rails"
 gem 'jquery-ui-rails'
+gem 'kaminari'
