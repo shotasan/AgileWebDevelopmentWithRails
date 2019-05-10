@@ -78,17 +78,18 @@
       <ObjectId>73856</ObjectId>
       <StateNumber>53569</StateNumber>
       <Owner>shota</Owner>
-      <IntrospectionStateNumber>53692</IntrospectionStateNumber>
+      <IntrospectionStateNumber>54167</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
       <Relations>sequence|table|73885|73887|1
 sequence|table|73924|73926|1
 sequence|table|73932|73934|1
+sequence|table|73987|73989|1
 </Relations>
     </database>
     <database id="17" parent="1" name="depot_test">
-      <ObjectId>73942</ObjectId>
-      <StateNumber>53627</StateNumber>
+      <ObjectId>73998</ObjectId>
+      <StateNumber>54021</StateNumber>
       <Owner>shota</Owner>
     </database>
     <database id="18" parent="1" name="gem_test_app_development">
@@ -322,7 +323,7 @@ sequence|table|73932|73934|1
       <Comment>standard public schema</Comment>
       <StateNumber>359</StateNumber>
       <Owner>shota</Owner>
-      <IntrospectionStateNumber>53693</IntrospectionStateNumber>
+      <IntrospectionStateNumber>54168</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -398,7 +399,15 @@ sequence|table|73932|73934|1
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
-    <sequence id="71" parent="61" name="products_id_seq">
+    <sequence id="71" parent="61" name="orders_id_seq">
+      <ObjectId>73987</ObjectId>
+      <StateNumber>54014</StateNumber>
+      <Owner>shota</Owner>
+      <SequenceIdentity>1</SequenceIdentity>
+      <CacheSize>1</CacheSize>
+      <DataType>bigint</DataType>
+    </sequence>
+    <sequence id="72" parent="61" name="products_id_seq">
       <ObjectId>73885</ObjectId>
       <StateNumber>53576</StateNumber>
       <Owner>shota</Owner>
@@ -406,73 +415,78 @@ sequence|table|73932|73934|1
       <CacheSize>1</CacheSize>
       <DataType>bigint</DataType>
     </sequence>
-    <table id="72" parent="61" name="ar_internal_metadata">
+    <table id="73" parent="61" name="ar_internal_metadata">
       <ObjectId>73866</ObjectId>
       <Owner>shota</Owner>
       <StateNumber>53572</StateNumber>
     </table>
-    <table id="73" parent="61" name="carts">
+    <table id="74" parent="61" name="carts">
       <ObjectId>73926</ObjectId>
       <Owner>shota</Owner>
       <StateNumber>53599</StateNumber>
     </table>
-    <table id="74" parent="61" name="line_items">
+    <table id="75" parent="61" name="line_items">
       <ObjectId>73934</ObjectId>
       <Owner>shota</Owner>
-      <StateNumber>53609</StateNumber>
+      <StateNumber>54017</StateNumber>
     </table>
-    <table id="75" parent="61" name="products">
+    <table id="76" parent="61" name="orders">
+      <ObjectId>73989</ObjectId>
+      <Owner>shota</Owner>
+      <StateNumber>54124</StateNumber>
+    </table>
+    <table id="77" parent="61" name="products">
       <ObjectId>73887</ObjectId>
       <Owner>shota</Owner>
       <StateNumber>53576</StateNumber>
     </table>
-    <table id="76" parent="61" name="schema_migrations">
+    <table id="78" parent="61" name="schema_migrations">
       <ObjectId>73858</ObjectId>
       <Owner>shota</Owner>
       <StateNumber>53571</StateNumber>
     </table>
-    <column id="77" parent="72" name="key">
+    <column id="79" parent="73" name="key">
       <Position>1</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>53572</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="78" parent="72" name="value">
+    <column id="80" parent="73" name="value">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
       <StateNumber>53572</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="79" parent="72" name="created_at">
+    <column id="81" parent="73" name="created_at">
       <Position>3</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>53572</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="80" parent="72" name="updated_at">
+    <column id="82" parent="73" name="updated_at">
       <Position>4</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>53572</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="81" parent="72" name="ar_internal_metadata_pkey">
+    <index id="83" parent="73" name="ar_internal_metadata_pkey">
       <ObjectId>73872</ObjectId>
       <StateNumber>53572</StateNumber>
       <ColNames>key</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="82" parent="72" name="ar_internal_metadata_pkey">
+    <key id="84" parent="73" name="ar_internal_metadata_pkey">
       <ObjectId>73873</ObjectId>
       <StateNumber>53572</StateNumber>
       <ColNames>key</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>ar_internal_metadata_pkey</UnderlyingIndexName>
     </key>
-    <column id="83" parent="73" name="id">
+    <column id="85" parent="74" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -480,35 +494,35 @@ sequence|table|73932|73934|1
       <DefaultExpression>nextval(&apos;carts_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="84" parent="73" name="created_at">
+    <column id="86" parent="74" name="created_at">
       <Position>2</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>53599</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="85" parent="73" name="updated_at">
+    <column id="87" parent="74" name="updated_at">
       <Position>3</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>53599</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="86" parent="73" name="carts_pkey">
+    <index id="88" parent="74" name="carts_pkey">
       <ObjectId>73930</ObjectId>
       <StateNumber>53599</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="87" parent="73" name="carts_pkey">
+    <key id="89" parent="74" name="carts_pkey">
       <ObjectId>73931</ObjectId>
       <StateNumber>53599</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>carts_pkey</UnderlyingIndexName>
     </key>
-    <column id="88" parent="74" name="id">
+    <column id="90" parent="75" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -516,54 +530,120 @@ sequence|table|73932|73934|1
       <DefaultExpression>nextval(&apos;line_items_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="89" parent="74" name="product_id">
+    <column id="91" parent="75" name="product_id">
       <Position>2</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>53600</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="90" parent="74" name="cart_id">
+    <column id="92" parent="75" name="cart_id">
       <Position>3</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>53600</StateNumber>
       <TypeId>23</TypeId>
     </column>
-    <column id="91" parent="74" name="created_at">
+    <column id="93" parent="75" name="created_at">
       <Position>4</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>53600</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="92" parent="74" name="updated_at">
+    <column id="94" parent="75" name="updated_at">
       <Position>5</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>53600</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="93" parent="74" name="quantity">
+    <column id="95" parent="75" name="quantity">
       <Position>7</Position>
       <DataType>integer|0s</DataType>
       <StateNumber>53609</StateNumber>
       <DefaultExpression>1</DefaultExpression>
       <TypeId>23</TypeId>
     </column>
-    <index id="94" parent="74" name="line_items_pkey">
+    <column id="96" parent="75" name="order_id">
+      <Position>9</Position>
+      <DataType>integer|0s</DataType>
+      <StateNumber>54017</StateNumber>
+      <TypeId>23</TypeId>
+    </column>
+    <index id="97" parent="75" name="line_items_pkey">
       <ObjectId>73938</ObjectId>
       <StateNumber>53600</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="95" parent="74" name="line_items_pkey">
+    <key id="98" parent="75" name="line_items_pkey">
       <ObjectId>73939</ObjectId>
       <StateNumber>53600</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>line_items_pkey</UnderlyingIndexName>
     </key>
-    <column id="96" parent="75" name="id">
+    <column id="99" parent="76" name="id">
+      <Position>1</Position>
+      <DataType>bigint|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>54014</StateNumber>
+      <DefaultExpression>nextval(&apos;orders_id_seq&apos;::regclass)</DefaultExpression>
+      <TypeId>20</TypeId>
+    </column>
+    <column id="100" parent="76" name="name">
+      <Position>2</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>54014</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="101" parent="76" name="address">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+      <StateNumber>54014</StateNumber>
+      <TypeId>25</TypeId>
+    </column>
+    <column id="102" parent="76" name="created_at">
+      <Position>4</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>54014</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="103" parent="76" name="updated_at">
+      <Position>5</Position>
+      <DataType>timestamp|0s</DataType>
+      <NotNull>1</NotNull>
+      <StateNumber>54014</StateNumber>
+      <TypeId>1114</TypeId>
+    </column>
+    <column id="104" parent="76" name="email">
+      <Position>8</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>54124</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <column id="105" parent="76" name="pay_type">
+      <Position>9</Position>
+      <DataType>varchar|0s</DataType>
+      <StateNumber>54124</StateNumber>
+      <TypeId>1043</TypeId>
+    </column>
+    <index id="106" parent="76" name="orders_pkey">
+      <ObjectId>73996</ObjectId>
+      <StateNumber>54014</StateNumber>
+      <ColNames>id</ColNames>
+      <Unique>1</Unique>
+      <Primary>1</Primary>
+    </index>
+    <key id="107" parent="76" name="orders_pkey">
+      <ObjectId>73997</ObjectId>
+      <StateNumber>54014</StateNumber>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>orders_pkey</UnderlyingIndexName>
+    </key>
+    <column id="108" parent="77" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
@@ -571,73 +651,73 @@ sequence|table|73932|73934|1
       <DefaultExpression>nextval(&apos;products_id_seq&apos;::regclass)</DefaultExpression>
       <TypeId>20</TypeId>
     </column>
-    <column id="97" parent="75" name="title">
+    <column id="109" parent="77" name="title">
       <Position>2</Position>
       <DataType>varchar|0s</DataType>
       <StateNumber>53576</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="98" parent="75" name="description">
+    <column id="110" parent="77" name="description">
       <Position>3</Position>
       <DataType>text|0s</DataType>
       <StateNumber>53576</StateNumber>
       <TypeId>25</TypeId>
     </column>
-    <column id="99" parent="75" name="image_url">
+    <column id="111" parent="77" name="image_url">
       <Position>4</Position>
       <DataType>varchar|0s</DataType>
       <StateNumber>53576</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <column id="100" parent="75" name="price">
+    <column id="112" parent="77" name="price">
       <Position>5</Position>
       <DataType>numeric(8,2 digit)|0s</DataType>
       <StateNumber>53576</StateNumber>
       <TypeId>1700</TypeId>
     </column>
-    <column id="101" parent="75" name="created_at">
+    <column id="113" parent="77" name="created_at">
       <Position>6</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>53576</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <column id="102" parent="75" name="updated_at">
+    <column id="114" parent="77" name="updated_at">
       <Position>7</Position>
       <DataType>timestamp|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>53576</StateNumber>
       <TypeId>1114</TypeId>
     </column>
-    <index id="103" parent="75" name="products_pkey">
+    <index id="115" parent="77" name="products_pkey">
       <ObjectId>73894</ObjectId>
       <StateNumber>53576</StateNumber>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="104" parent="75" name="products_pkey">
+    <key id="116" parent="77" name="products_pkey">
       <ObjectId>73895</ObjectId>
       <StateNumber>53576</StateNumber>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
       <UnderlyingIndexName>products_pkey</UnderlyingIndexName>
     </key>
-    <column id="105" parent="76" name="version">
+    <column id="117" parent="78" name="version">
       <Position>1</Position>
       <DataType>varchar|0s</DataType>
       <NotNull>1</NotNull>
       <StateNumber>53571</StateNumber>
       <TypeId>1043</TypeId>
     </column>
-    <index id="106" parent="76" name="schema_migrations_pkey">
+    <index id="118" parent="78" name="schema_migrations_pkey">
       <ObjectId>73864</ObjectId>
       <StateNumber>53571</StateNumber>
       <ColNames>version</ColNames>
       <Unique>1</Unique>
       <Primary>1</Primary>
     </index>
-    <key id="107" parent="76" name="schema_migrations_pkey">
+    <key id="119" parent="78" name="schema_migrations_pkey">
       <ObjectId>73865</ObjectId>
       <StateNumber>53571</StateNumber>
       <ColNames>version</ColNames>
