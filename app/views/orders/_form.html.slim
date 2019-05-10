@@ -8,8 +8,15 @@
 
   .field
     = f.label :name
-    = f.text_field :name
+    = f.text_field :name, size: 40
   .field
     = f.label :address
-    = f.text_area :address
-  .actions = f.submit
+    = f.text_area :address, row: 3, cols: 40
+  .field
+    = f.label :email
+    = f.email_field :email, size: 40
+  .field
+    = f.label :pay_type
+    = f.select :pay_type, Order::PAYMENT_TYPES, prompt: 'お支払い方法を選択してください'
+
+  .actions = f.submit '注文する'

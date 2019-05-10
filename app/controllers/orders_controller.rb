@@ -14,7 +14,18 @@ class OrdersController < ApplicationController
 
   # GET /orders/new
   def new
+    @cart = current_cart
+    if @cart.line_items.empty?
+      redirect_to store_url, notice: 'カートは空です'
+      return
+    end
+
     @order = Order.new
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @order }
+    end
   end
 
   # GET /orders/1/edit
@@ -24,13 +35,22 @@ class OrdersController < ApplicationController
   # POST /orders
   # POST /orders.json
   def create
+    # 新しいOrderオブジェクトの作成
     @order = Order.new(order_params)
+    # cart_idをnilにして、商品情報だけをline_itemsとして返す
+    @order.add_line_items_from_cart(current_cart)
 
     respond_to do |format|
+      # @orderをsaveするとオーダー情報（名前、Email等）の新規登録と
+      # add_line_items_from_cartで取得されたline_itemsが更新され、order_idが登録される
       if @order.save
-        format.html { redirect_to @order, notice: 'Order was successfully created.' }
-        format.json { render :show, status: :created, location: @order }
+        # カートを削除してsessionも空にする
+        Cart.destroy(session[:cart_id])
+        session[:cart_id] = nil
+        format.html { redirect_to store_url, notice: 'ご注文ありがとうございます' }
+        format.json { render json: @order, status: :created, location: @order }
       else
+        @cart = current_cart
         format.html { render :new }
         format.json { render json: @order.errors, status: :unprocessable_entity }
       end
@@ -69,6 +89,6 @@ class OrdersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def order_params
-      params.require(:order).permit(:name, :address)
+      params.require(:order).permit(:name, :address, :email, :pay_type)
     end
 end
