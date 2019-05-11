@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Railによるアジャイルwebアプリケーション開発　第４版
+実装コード
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+#### バージョン情報
+***
+書籍
+ 
+ - Ruby 1.9.2
+ - Rails 3.1
+ 
+実装
+    
+ - Ruby 2.6.3
+ - Rails 5.2.3
+    
+#### アプリ情報
+***
+- オンラインストアを想定したアプリケーション
+#### 修正点
+***
+- 書籍ではMiniTestを使用しているがRSpecで実装
+- テンプレートエンジンをERBからSlimに変更
