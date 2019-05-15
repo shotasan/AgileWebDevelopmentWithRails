@@ -5,6 +5,7 @@ class Order < ApplicationRecord
 
   validates :name, :address, :email, presence: true
   validates :pay_type, inclusion: PAYMENT_TYPES
+  encrypt(:name, :email)
 
   # cart→cart_id
   # cart.line_itemsでカートに入れた品目一覧を取得
